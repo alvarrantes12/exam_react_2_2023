@@ -19,7 +19,7 @@ function Index({ refresh, setRefresh }) {
     }, [setContents, setLoading, refresh])
 
     return (
-        <div>
+        <div style= {{marginLeft: '20px'}}>
             <h1>Examen II </h1>
             <h2>C01950-C09317</h2>
             <LoadingList isloading={loading} contents={contents} />

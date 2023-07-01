@@ -7,7 +7,7 @@ const List = ({ contents }) => {
 
     return (
 
-        <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+        <div style={{ display: 'flex', gap: '10px', marginTop: '10px',marginLeft:'20px' }}>
             <table>
                 <tr>
                     <th style={{ padding: "1em", backgroundColor: "#090058", fontWeight: "bold", color: "white" }}>ID</th>

@@ -25,22 +25,55 @@ function New ({setRefresh}){
        <>
         <form onSubmit={handleSubmit}>
            <div>
-           <input style ={{margin: "4px", height: "20px"}}
+           <input 
              type='text'
              value = {name}
              placeholder='Nombre del país'
-             onChange={(e) => {setName(e.target.value);}} />
+             onChange={(e) => {setName(e.target.value);}} 
+             style={{
+              padding: '0.5em',
+              fontSize: '16px',
+              border: '1px solid lightgray',
+              borderRadius: '4px',
+              outline: 'none',
+              boxShadow: 'none',
+              width: '29%',
+              boxSizing: 'border-box',
+              marginTop: '10px',
+              marginLeft: '20px'
+          }}/>
            </div>
    
            <div>
-           <input style ={{margin: "4px", height: "20px"}}
+           <input 
              type='text'
              value = {fact}
              placeholder='Dato curioso'
-             onChange={(e) => {setFact(e.target.value);}} />
+             onChange={(e) => {setFact(e.target.value);}} 
+             style={{
+              padding: '0.5em',
+              fontSize: '16px',
+              border: '1px solid lightgray',
+              borderRadius: '4px',
+              outline: 'none',
+              boxShadow: 'none',
+              width: '29%',
+              boxSizing: 'border-box',
+              marginTop: '10px',
+              marginLeft: '20px'
+          }} />
+
            </div>
-           <div>{message ? <p>{message}</p> : <br />}</div>
-           <button type ='submit' style ={{margin: "8px", height: "25px"}}> Crear </button>
+           <div>{message ? <p>{message}</p> : <br />}</div >
+           <div style={{ display: 'flex', gap: '10px', marginBottom: '10px', marginLeft: '20px' }}>
+           <button type ='submit' style ={{borderRadius: "4px",
+                        backgroundColor: "#BECCFF",
+                        padding: '15px 25px',
+                        border: "none",
+                        fontWeight: "bold",
+                        marginLeft: '20px'}}> Crear </button>
+           </div>
+          
          </form>
        </>
      )
