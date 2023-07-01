@@ -9,3 +9,9 @@ export async function postFetch(path, body) {
     });
     return await response.json();
 }
+
+export async function getFetch(path) {
+    let response = await fetch(`${process.env.REACT_APP_API_URL}/${path}`);
+    return await response.json();
+}
+
