@@ -14,7 +14,7 @@ const List = ({ contents }) => {
                     <th style={{padding: "0 4em 0 4em"}}>Dato</th>
                 </tr>
 
-                {contents.map(({ id, name, price}) => (
+                {contents.map(({ id, name, fact}) => (
                     <tr>
                         <td style={{ padding: "0 4em 0 1em" }}>{id}</td>
                         <td style={{ padding: "0 4em 0 1em" }}>{name}</td>
