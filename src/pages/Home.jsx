@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 import { postFetch } from '../commons/ApiMethods';
+import Index from '../components/Countries/Index';
 
 function Home() {
   const [name, setName] = useState('')
@@ -11,7 +12,7 @@ function Home() {
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
-      postFetch('countries', { name: name}, {fact: fact })
+      postFetch('countries', { name: name, fact: fact })
         .then((response) => {
           setName('')
           setFact('')
@@ -42,9 +43,12 @@ function Home() {
             placeholder="Dato curioso"
             onChange={(e) => { setFact(e.target.value) }} />
         </div>
-
+        
         <div>{message ? <p>{message}</p> : <br />}</div>
         <button className="btn" type="submit">Crear país</button>
+        <div>
+          <Index refresh={refresh} setRefresh={setRefresh}/>
+        </div>
       </form>
     </div>
   );
