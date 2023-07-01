@@ -1,56 +1,40 @@
 import React, { useState } from 'react';
-import './Home.css';
-import { postFetch } from '../commons/ApiMethods';
+import { Link } from 'react-router-dom';
+import Index from '../components/countries/index';
 
 function Home() {
-  const [name, setName] = useState('')
-  const [fact, setFact] = useState('')
-  const [message, setMessage] = useState('')
-  const [refresh, setRefresh] = useState(true)
-
-  const handleSubmit = async (event) => {
-    event.preventDefault()
-    try {
-      postFetch('countries', { name: name}, {fact: fact })
-        .then((response) => {
-          setName('')
-          setFact('')
-          setMessage('Creado con exito!')
-          setRefresh(true)
-        })
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
-
+  const [refresh, setRefresh] = useState(true);
   return (
-    <div className="new-container">
-      <h3>Crear un nuevo país</h3>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <input
-            type="text"
-            value={name}
-            placeholder="Nombre del país"
-            onChange={(e) => { setName(e.target.value) }} />
-        </div>
-        <div>
-          <input
-            type="text"
-            value={fact}
-            placeholder="Dato curioso"
-            onChange={(e) => { setFact(e.target.value) }} />
-        </div>
+    <div>
+      <Index refresh={refresh} setRefresh={setRefresh} />
 
-        <div>{message ? <p>{message}</p> : <br />}</div>
-        <button className="btn" type="submit">Crear país</button>
-      </form>
+      <div style={{ display: 'grid', justifyContent: 'center', gap: '20px', marginTop: '30px' }}>
+  <Link to="/create" style={{ textDecoration: 'none' }}>
+    <button
+      style={{
+        backgroundColor: '#B0E212',
+        color: '#FFFFFF',
+        padding: '15px 30px',
+        border: 'none',
+        borderRadius: '10px',
+        fontWeight: 'bold'
+      }}
+    >
+      Nuevo
+    </button>
+    </Link>
+      </div>
     </div>
   );
-
-}
-
-
+};
 
 export default Home;
+
+
+
+
+
+
+
+
+
