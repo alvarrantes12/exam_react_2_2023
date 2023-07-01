@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function WithLoadingState(Component) {
     return function WithLoadingState({isLoading,...props}){

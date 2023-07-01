@@ -22,7 +22,7 @@ function Index ({refresh, setRefresh}) {
    return (
       <>
       <div >
-         <h2 style={{margin: "4px"}}>Conexión API Local de Paises </h2>
+         <h2 style={{margin: '4px'}}>Conexión API Local de Paises </h2>
          <LoadingList isLoading={loading} contents={contents} />
       </div>
          

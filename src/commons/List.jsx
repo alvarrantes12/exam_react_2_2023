@@ -8,7 +8,7 @@ const List = ({contents}) => {
         <div>
             <h4>Estos son los datos disponibles</h4>
             <div style={{ maxHeight: '400px', overflow: 'auto' }}>
-            <table style={{ width: '100%' }}>{/* width 100, is to widen 100 of the width*/}
+            <table style={{ width: '100%' }}>
                 <tr>
                     <th style={cellStyle}> Id</th>
                     <th style={cellStyle}>Nombre</th>
