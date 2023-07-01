@@ -18,7 +18,7 @@ const List = ({ contents }) => {
                 <tbody>
                     {contents.map(({ id, name, fact }) => (
                         <tr>
-                            <td style={{ padding: "1em", backgroundColor: "#BECCFF", fontWeight: "bold", textAlign: "center"}} >{id}</td>
+                            <td style={{ padding: "1em", backgroundColor: "#090058", fontWeight: "bold", color: "white", textAlign: "center"}} >{id}</td>
                             <td style={{ padding: "1em", backgroundColor: "#BECCFF", textAlign: "center"}} >{name}</td>
                             <td style={{ padding: "1em", backgroundColor: "#BECCFF", textAlign: "center"}} >{fact}</td>
                         </tr>
