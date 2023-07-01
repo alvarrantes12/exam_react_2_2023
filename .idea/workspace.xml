@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44df6c92-7b72-4638-b113-483b5747f46c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commons/List.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commons/List.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commons/WithLoadingState.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Countries/Index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Countries/Index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/ApiMethods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/ApiMethods.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+    <list default="true" id="44df6c92-7b72-4638-b113-483b5747f46c" name="Changes" comment="MZS-C18736 Api and Index List Done.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/List.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/List.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +48,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688224141226</updated>
-      <workItem from="1688224143976" duration="1300000" />
+      <workItem from="1688224143976" duration="2412000" />
     </task>
+    <task id="LOCAL-00001" summary="MZS-C18736 Api and Index List Done.">
+      <option name="closed" value="true" />
+      <created>1688225689204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688225689204</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MZS-C18736 Api and Index List Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="MZS-C18736 Api and Index List Done." />
   </component>
 </project>

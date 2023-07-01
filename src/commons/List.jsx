@@ -5,8 +5,8 @@ const List = ({contents}) => {
 
     return (
         <div>
-            <table className="table">
-                <thead className={"thead-dark"}>
+            <table>
+                <thead>
                 <tr>
                     <th style={{padding: "0 4em 0 4em"}}>Id</th>
                     <th style={{padding: "0 4em 0 4em"}}>Nombre</th>
