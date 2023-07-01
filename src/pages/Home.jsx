@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 import { postFetch } from '../commons/ApiMethods';
+import Index from "../components/Countries/index";
 
 function Home() {
   const [name, setName] = useState('')
@@ -25,7 +26,12 @@ function Home() {
 
 
   return (
-    <div className="new-container">
+
+    <div>
+      <Index refresh={refresh} setRefresh={setRefresh} />
+
+
+      <div className="new-container">
       <h3>Crear un nuevo país</h3>
       <form onSubmit={handleSubmit}>
         <div>
@@ -47,6 +53,8 @@ function Home() {
         <button className="btn" type="submit">Crear país</button>
       </form>
     </div>
+    </div>
+    
   );
 
 }
