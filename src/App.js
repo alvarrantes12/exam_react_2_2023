@@ -6,16 +6,18 @@ import {
   Routes
 } from 'react-router-dom';
 import Home from './pages/Home';
+import CreateCountries from './pages/CreateCountry';
 
 function App() {
   return (
-    <>
+    <div>
       <Router>
         <Routes>
           <Route path='/' exact element={<Home />} />
+          <Route path='/create' exact element={<CreateCountries />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 
