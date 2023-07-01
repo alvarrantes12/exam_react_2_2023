@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
+import Index from '../components/Countries/index'
 import { postFetch } from '../commons/ApiMethods';
 
 function Home() {
@@ -46,6 +47,8 @@ function Home() {
         <div>{message ? <p>{message}</p> : <br />}</div>
         <button className="btn" type="submit">Crear país</button>
       </form>
+      <div style={{ marginBottom: '40px' }}></div> {/* Espaciado */}
+      <Index refresh={refresh} setRefresh={setRefresh} />
     </div>
   );
 
