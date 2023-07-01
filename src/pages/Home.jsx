@@ -23,7 +23,6 @@ function Home() {
     }
   }
 
-
   return (
     <div className="new-container">
       <h3>Crear un nuevo país</h3>
