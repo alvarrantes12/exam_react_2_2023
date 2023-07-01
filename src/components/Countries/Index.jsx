@@ -11,7 +11,7 @@ function Index({ refresh, setRefresh }) {
   useEffect(() => {
     if (!refresh) return;
     setLoading(true);
-    getFetch('products').then((data) => {
+    getFetch('countries').then((data) => {
       console.log(data);
       setContents(data);
       setLoading(false);
