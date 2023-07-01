@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import './Home.css';
 import { postFetch } from '../commons/ApiMethods';
+import Index from '../components/Countries/index';
 
 function Home() {
   const [name, setName] = useState('')
   const [fact, setFact] = useState('')
   const [message, setMessage] = useState('')
   const [refresh, setRefresh] = useState(true)
+  
 
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -26,6 +28,9 @@ function Home() {
 
   return (
     <div className="new-container">
+      
+      <Index refresh={refresh} setRefresh={setRefresh} />
+      
       <h3>Crear un nuevo país</h3>
       <form onSubmit={handleSubmit}>
         <div>
